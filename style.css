@@ -1,19 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&display=swap');
+*{
+    font-family: "Hanken Grotesk", sans-serif;
+    box-sizing: border-box;
+}
 main{
-    /* padding: 10px; */
-    margin: 10vh;
-    background-color: aqua;
+    margin: 20vh;
+    background-color:white;
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
-    border: 5px solid black;
-    
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* border: 5px solid black; */
+    text-align: center;
+    color: white;
+    min-height: 70vh;
 }
 .parts{
-    height: 100vh;  
-    border-top-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+     
+}
+.result{
+    
+    background-color: rgb(80, 80, 253);
+    border-radius: 2rem;
+    
+    
+}
+.result-header{
+    
+    font-weight: bold;
+    font-size: large;
+    color: rgb(224, 217, 217);
 
 }
-#result{
-    border-top-right-radius: 2rem;
-    border-color: black;
+.result-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(35, 67, 248);
+    border-radius: 50%;
+}
+p{
+    color: rgb(224, 217, 217);
+}
+.obtained-score{
+    font-weight: 800;
+    font-size: 4rem;
+}
+.total{
+    font-weight: 700;
+    color: rgb(224, 217, 217);
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+    color: hsl(224, 30%, 27%);
+    gap: 1.5rem;
+}
+.reaction{
+    background: rgb(224, 189, 189);
+    
+}
+.title-reaction{
+    color: red;
+
+}
+.memory{
+    background: rgb(252, 236, 207);
+    
+}
+.title-memory{
+    color: rgb(247, 162, 4);
+}
+.verbal{
+    background: rgb(187, 236, 187);
+    
+}
+.title-verbal{
+    color: green;
+
+}
+.visual{
+    background: rgb(132, 132, 235);
+}
+.title-visual{
+    color: blue;
+}
+.grey100{
+    color: grey;
+}
+
+button {
+   margin-top: 2rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.5rem;
+    border-radius: 5rem;
+  }
+  button:hover {
+    background-color: hsl(248, 91%, 60%);
+  }
+ button:active {
+    background-color: rgba(85, 60, 246, 0.8);
+  }
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1rem;
+    font-weight: 800;
+
+  
+}
+h2{
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: left;
+    
+}
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
