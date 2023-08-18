@@ -49,6 +49,7 @@ main{
     height: 200px;
     background-color: rgb(35, 67, 248);
     border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 p{
     color: rgb(224, 217, 217);
