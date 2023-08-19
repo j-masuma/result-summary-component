@@ -13,28 +13,27 @@ main{
     /* border: 5px solid black; */
     text-align: center;
     color: white;
-    min-height: 70vh;
-}
-.parts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-    padding: 1rem;
-     
+    /* min-height: 70vh; */
 }
 .result{
     
     background-color: rgb(80, 80, 253);
     border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+     
     
     
 }
 .result-header{
     
-    font-weight: bold;
-    font-size: large;
+    font-weight: 800; 
+    font-size: 1.5rem;
+
     color: rgb(224, 217, 217);
 
 }
@@ -47,9 +46,13 @@ main{
     gap: 1rem;
     width: 200px;
     height: 200px;
-    background-color: rgb(35, 67, 248);
+    background-color: rgb(63, 87, 224);
     border-radius: 50%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+h1{
+    font-weight: 800; 
+    font-size: 2rem;
 }
 p{
     color: rgb(224, 217, 217);
@@ -60,7 +63,7 @@ p{
 }
 .total{
     font-weight: 700;
-    color: rgb(224, 217, 217);
+    color: rgb(255, 255, 255);
 }
 .summary{
     display: flex;
@@ -71,7 +74,7 @@ p{
     gap: 1.5rem;
 }
 .reaction{
-    background: rgb(224, 189, 189);
+    background: rgb(247, 234, 234);
     
 }
 .title-reaction{
@@ -79,14 +82,14 @@ p{
 
 }
 .memory{
-    background: rgb(252, 236, 207);
+    background: rgb(248, 243, 234);
     
 }
 .title-memory{
     color: rgb(247, 162, 4);
 }
 .verbal{
-    background: rgb(187, 236, 187);
+    background: rgb(226, 245, 226);
     
 }
 .title-verbal{
@@ -94,17 +97,18 @@ p{
 
 }
 .visual{
-    background: rgb(132, 132, 235);
+    background: rgb(234, 234, 250);
 }
 .title-visual{
     color: blue;
 }
 .grey100{
     color: grey;
+    
 }
 
 button {
-   margin-top: 2rem;
+    margin-top: 2rem;
     text-decoration: none;
     text-align: center;
     padding: 1.25rem 1rem;
@@ -112,6 +116,8 @@ button {
     color: hsl(0, 0%, 100%);
     margin-top: 0.5rem;
     border-radius: 5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
   }
   button:hover {
     background-color: hsl(248, 91%, 60%);
@@ -125,7 +131,8 @@ button {
     justify-content: space-between;
     border-radius: 0.5rem;
     padding: 1.25rem 1rem;
-    font-weight: 800;
+    font-weight: 800; 
+    font-size: 1.5rem;
 
   
 }
@@ -141,4 +148,21 @@ h2{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:800px){
+    main{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .result{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .summary{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        
+    }
 }
