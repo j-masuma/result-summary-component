@@ -10,10 +10,8 @@ main{
     flex-direction: row;
     border-radius: 2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    /* border: 5px solid black; */
     text-align: center;
     color: white;
-    /* min-height: 70vh; */
 }
 .result{
     
